@@ -1,0 +1,1 @@
+export let img = 'https://www.pngfind.com/pngs/m/50-506974_superhero-silhouette-png-female-superhero-silhouette-png-transparent.png'
