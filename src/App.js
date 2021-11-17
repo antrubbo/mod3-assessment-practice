@@ -56,7 +56,11 @@ class App extends Component {
     return (
       <div className="app">
         <NavBar />
-        <HeroForm handleHeroSelect={this.handleHeroSelect} handleNewHero={this.handleNewHero} handleHeroInput={this.handleHeroInput}/>
+        <HeroForm 
+          handleHeroSelect={this.handleHeroSelect} 
+          handleNewHero={this.handleNewHero} 
+          handleHeroInput={this.handleHeroInput}
+        />
         <div id="hero-display">
           <HeroList selected={this.state.selected}/>
           <HeroUL selected={this.state.selected}/>

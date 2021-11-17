@@ -1,8 +1,6 @@
 import { Component } from "react";
 
 class HeroForm extends Component {
-
-
     render(){
         const { handleHeroSelect, handleNewHero, handleHeroInput } = this.props
 
@@ -12,11 +10,11 @@ class HeroForm extends Component {
                 <form onSubmit={handleNewHero} action="" id="add-hero">
                     <div>
                         <label htmlFor="name">Name: </label>
-                        <input onInput={(evt) => handleHeroInput(evt)}type="text" name="name" id="name"/>
+                        <input onInput={handleHeroInput}type="text" name="name" id="name"/>
                     </div>
                     <div>
                         <label htmlFor="description">Description: </label>
-                        <textarea onChange={handleHeroInput} type="text" name="description" id="description"/>
+                        <textarea onInput={handleHeroInput} type="text" name="description" id="description"/>
                     </div>
                     <button type="submit">Let's Go!</button>
                 </form> 
