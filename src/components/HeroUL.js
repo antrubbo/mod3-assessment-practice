@@ -5,7 +5,7 @@ class HeroUL extends Component {
     render(){
         const { selected } = this.props
 
-        let chosenHeroes = selected.map((hero, i) => <li key={selected[i].name + i}>{selected[i].name}</li>) 
+        let chosenHeroes = selected.map((hero, i) => <li key={hero.name + i}>{hero.name}</li>) 
 
         return(
             <div id="hero-ul">

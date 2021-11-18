@@ -5,7 +5,6 @@ class NavBar extends Component {
         return (
             <div id="navbar">
                 <h1 id="title">Marvel Superheroes!</h1>
-                {/* <button>Add a Superhero!</button> */}
             </div>
         )
     }
